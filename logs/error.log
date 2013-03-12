@@ -1,0 +1,663 @@
+2013-03-08 11:47:02,965 ERROR: Can't imported crawler [in server/worker.py:37]
+2013-03-08 11:54:17,357 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-08 11:54:17,363 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 17, in run
+    self.crawl(self.base_url);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in crawl
+    f = urllib2.urlopen(url);
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1174, in do_open
+    raise URLError(err)
+URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+ [in server/worker.py:44]
+2013-03-08 11:54:17,364 ERROR: Can't imported crawler [in server/worker.py:37]
+2013-03-12 00:01:10,734 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:01:10,735 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 24, in run
+    self.save();
+TypeError: save() takes exactly 3 arguments (1 given)
+ [in server/worker.py:44]
+2013-03-12 00:01:10,735 ERROR: Can't imported crawler [in server/worker.py:37]
+2013-03-12 00:01:11,103 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:01:11,103 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 24, in run
+    self.save();
+TypeError: save() takes exactly 3 arguments (1 given)
+ [in server/worker.py:44]
+2013-03-12 00:01:11,104 ERROR: Can't imported crawler [in server/worker.py:37]
+2013-03-12 00:01:11,472 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:01:11,472 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 24, in run
+    self.save();
+TypeError: save() takes exactly 3 arguments (1 given)
+ [in server/worker.py:44]
+2013-03-12 00:01:11,473 ERROR: Can't imported crawler [in server/worker.py:37]
+2013-03-12 00:01:11,552 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:01:11,556 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+    self.crawl(self.base_url);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 27, in crawl
+    f = urllib2.urlopen(url);
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 394, in open
+    response = self._open(req, data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 412, in _open
+    '_open', req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 372, in _call_chain
+    result = func(*args)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1199, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 1168, in do_open
+    h.request(req.get_method(), req.get_selector(), req.data, headers)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 955, in request
+    self._send_request(method, url, body, headers)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 989, in _send_request
+    self.endheaders(body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 951, in endheaders
+    self._send_output(message_body)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 811, in _send_output
+    self.send(msg)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/httplib.py", line 787, in send
+    self.sock.sendall(data)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 13-14: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 00:02:17,609 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:02:17,618 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+    self.crawl(self.base_url);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 27, in crawl
+    f = urllib2.urlopen(urllib.urlencode(url));
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1280, in urlencode
+    raise TypeError
+TypeError: not a valid non-string sequence or mapping object
+ [in server/worker.py:44]
+2013-03-12 00:05:53,484 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:05:53,485 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+    self.crawl(self.base_url);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 29, in crawl
+    f = urllib2.urlopen(urllib.quote(url));
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1250, in quote
+    return ''.join(map(quoter, s))
+KeyError: u'\u516d'
+ [in server/worker.py:44]
+2013-03-12 00:08:52,218 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:08:52,219 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+    self.crawl(self.base_url);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 29, in crawl
+    f = urllib2.urlopen(urllib.quote(url.decode("utf-8")));
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 31-32: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 00:09:30,106 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:09:30,109 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+    self.crawl(self.base_url);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 29, in crawl
+    f = urllib2.urlopen(urllib.quote(url.encode("utf-8")));
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 386, in open
+    protocol = req.get_type()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 248, in get_type
+    raise ValueError, "unknown url type: %s" % self.__original
+ValueError: unknown url type: http%3A//search.naver.jp/image%3Fq%3D%E5%85%AD%E8%8A%B1%26sm%3Dsbx_hty.image
+ [in server/worker.py:44]
+2013-03-12 00:14:18,099 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:14:18,102 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    res = self.exec_scraping();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 36, in exec_scraping
+    res = self.scraping(bs);
+  File "/Users/yuta/crawler_farm/server/crawlers/CharactorImageCrawler.py", line 10, in scraping
+    return [img.src for img in images_wrap.find("img")];
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 667, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'src'
+ [in server/worker.py:44]
+2013-03-12 00:15:42,028 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:15:42,030 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    res = self.exec_scraping();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 36, in exec_scraping
+    res = self.scraping(bs);
+  File "/Users/yuta/crawler_farm/server/crawlers/CharactorImageCrawler.py", line 10, in scraping
+    return [img.attrs["src"] for img in images_wrap.find("img")];
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 667, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'attrs'
+ [in server/worker.py:44]
+2013-03-12 00:16:55,667 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:16:55,670 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    res = self.exec_scraping();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 36, in exec_scraping
+    res = self.scraping(bs);
+  File "/Users/yuta/crawler_farm/server/crawlers/CharactorImageCrawler.py", line 11, in scraping
+    return [img.attrs["src"] for img in images_wrap.find("img")];
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 667, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'attrs'
+ [in server/worker.py:44]
+2013-03-12 00:17:32,034 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:17:32,036 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    res = self.exec_scraping();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 36, in exec_scraping
+    res = self.scraping(bs);
+  File "/Users/yuta/crawler_farm/server/crawlers/CharactorImageCrawler.py", line 11, in scraping
+    return [img.attrs["src"] for img in images_wrap.find("img")];
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 667, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'attrs'
+ [in server/worker.py:44]
+2013-03-12 00:20:03,949 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:20:03,951 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    res = self.exec_scraping();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 36, in exec_scraping
+    res = self.scraping(bs);
+  File "/Users/yuta/crawler_farm/server/crawlers/CharactorImageCrawler.py", line 11, in scraping
+    return [img.attrs["src"] for img in images_wrap.find("img")];
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 667, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'attrs'
+ [in server/worker.py:44]
+2013-03-12 00:20:34,573 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:20:34,574 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    res = self.exec_scraping();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 36, in exec_scraping
+    res = self.scraping(bs);
+  File "/Users/yuta/crawler_farm/server/crawlers/CharactorImageCrawler.py", line 11, in scraping
+    return [img.attrs["src"] for img in images_wrap.find("img")];
+  File "/Library/Python/2.7/site-packages/bs4/element.py", line 667, in __getattr__
+    self.__class__.__name__, attr))
+AttributeError: 'NavigableString' object has no attribute 'attrs'
+ [in server/worker.py:44]
+2013-03-12 00:21:24,949 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 00:21:24,950 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run();
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 26, in run
+    self.save(res, db);
+  File "/Users/yuta/crawler_farm/server/crawlers/CharactorImageCrawler.py", line 13, in save
+    id = self.args[0];
+IndexError: list index out of range
+ [in server/worker.py:44]
+2013-03-12 16:26:20,510 ERROR: Error On Crawler [in server/worker.py:43]
+2013-03-12 16:26:20,530 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    else:
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1280, in urlencode
+    raise TypeError
+TypeError: not a valid non-string sequence or mapping object
+ [in server/worker.py:44]
+2013-03-12 16:29:25,313 ERROR: Error On Crawler [in server/worker.py:44]
+2013-03-12 16:29:25,316 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 42, in callback
+    c.run(method=method, *message[3:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    self.crawl(self.base_url, method);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 35, in crawl
+    f = urllib2.urlopen(url, urllib.urlencode(self.params));
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1279, in urlencode
+    if len(query) and not isinstance(query[0], tuple):
+TypeError: not a valid non-string sequence or mapping object
+ [in server/worker.py:45]
+2013-03-12 16:29:25,324 ERROR: Error On Crawler [in server/worker.py:44]
+2013-03-12 16:29:25,326 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 42, in callback
+    c.run(method=method, *message[3:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 34, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1] + u"ちゃんかわいい".encode("utf-8"))
+IndexError: tuple index out of range
+ [in server/worker.py:45]
+2013-03-12 16:33:50,329 ERROR: Error On Crawler [in server/worker.py:44]
+2013-03-12 16:33:50,331 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 42, in callback
+    except:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    if self.COLLECTION:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 35, in crawl
+    def exec_scraping(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1279, in urlencode
+    if len(query) and not isinstance(query[0], tuple):
+TypeError: not a valid non-string sequence or mapping object
+ [in server/worker.py:45]
+2013-03-12 16:33:50,331 ERROR: Error On Crawler [in server/worker.py:44]
+2013-03-12 16:33:50,334 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 42, in callback
+    except:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 34, in pre_crawling
+IndexError: tuple index out of range
+ [in server/worker.py:45]
+2013-03-12 16:35:17,880 ERROR: Error On Crawler [in server/worker.py:44]
+2013-03-12 16:35:17,881 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 42, in callback
+    except:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    if self.COLLECTION:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 35, in crawl
+    def exec_scraping(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1279, in urlencode
+    if len(query) and not isinstance(query[0], tuple):
+TypeError: not a valid non-string sequence or mapping object
+ [in server/worker.py:45]
+2013-03-12 16:35:17,881 ERROR: Error On Crawler [in server/worker.py:44]
+2013-03-12 16:35:17,882 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 42, in callback
+    except:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 34, in pre_crawling
+IndexError: tuple index out of range
+ [in server/worker.py:45]
+2013-03-12 16:36:45,848 ERROR: Error On Crawler [in server/worker.py:44]
+2013-03-12 16:36:45,849 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 42, in callback
+    except:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 22, in run
+    if self.COLLECTION:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 35, in crawl
+    def exec_scraping(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1279, in urlencode
+    if len(query) and not isinstance(query[0], tuple):
+TypeError: not a valid non-string sequence or mapping object
+ [in server/worker.py:45]
+2013-03-12 16:36:45,849 ERROR: Error On Crawler [in server/worker.py:44]
+2013-03-12 16:36:45,850 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 42, in callback
+    except:
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 21, in run
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 34, in pre_crawling
+IndexError: tuple index out of range
+ [in server/worker.py:45]
+2013-03-12 16:37:03,527 ERROR: Error On CharactorImageCrawler [in server/worker.py:43]
+2013-03-12 16:37:03,531 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 19, in run
+    self.crawl(self.base_url, self.METHOD);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 30, in crawl
+    f = urllib2.urlopen(url + urllib.urlencode(self.params));
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1279, in urlencode
+    if len(query) and not isinstance(query[0], tuple):
+TypeError: not a valid non-string sequence or mapping object
+ [in server/worker.py:44]
+2013-03-12 16:37:03,537 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:37:03,538 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1] + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:39:34,722 ERROR: Error On CharactorImageCrawler [in server/worker.py:43]
+2013-03-12 16:39:34,723 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 19, in run
+    self.crawl(self.base_url, self.METHOD);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 30, in crawl
+    f = urllib2.urlopen(url + urllib.urlencode(self.params));
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib.py", line 1279, in urlencode
+    if len(query) and not isinstance(query[0], tuple):
+TypeError: not a valid non-string sequence or mapping object
+ [in server/worker.py:44]
+2013-03-12 16:39:34,724 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:39:34,725 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1] + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:41:04,368 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:41:04,369 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1] + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:41:57,403 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:41:57,403 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1].encode("utf-8") + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:42:19,027 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:42:19,028 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1].decode("utf-8") + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:43:14,983 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:43:14,983 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1].encode("utf-8") + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:43:25,712 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:43:25,713 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1].encode("utf-8") + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:44:18,897 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:44:18,897 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1].encode("utf-8") + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:44:48,631 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:44:48,632 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1] + u"ちゃんかわいい".encode("utf-8"))
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:46:06,417 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:46:06,418 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1] + "ちゃんかわいい")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:46:47,606 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:46:47,607 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1].decode("utf-8") + "ちゃんかわいい")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:47:10,782 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:47:10,783 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    print self.args[1]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:47:40,165 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:47:40,166 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1].encode("utf-8") + "ちゃんかわいい")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:48:17,092 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:48:17,093 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    self.params["TextBoxText"] = (self.args[1] + "ちゃんかわいい").encode("utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:51:43,281 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:51:43,281 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    name = self.args[1].encode("utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:52:12,973 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:52:12,973 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    name = self.args[1].decode("utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:52:36,078 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:52:36,079 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    print self.args[1]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 0: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:52:50,761 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:52:50,762 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = self.args[1].decode("utf-8")
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:53:07,871 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:53:07,872 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = self.args[1]
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:53:45,078 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:53:45,079 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = self.args[1]
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:55:31,626 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:55:31,626 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = self.args[1]
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:56:01,117 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:56:01,118 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = self.args[1]
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:56:58,459 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:56:58,460 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = self.args[1]
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:57:48,052 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:57:48,053 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = unicode(self.args[1])
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:58:24,994 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:58:24,994 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = str(self.args[1])
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 16:58:44,110 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 16:58:44,112 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    name = str(self.args[1])
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 17:00:24,921 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 17:00:24,922 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    print self.argsu
+AttributeError: LogoCrawler instance has no attribute 'argsu'
+ [in server/worker.py:44]
+2013-03-12 17:00:48,808 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 17:00:48,809 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 36, in pre_crawling
+    print self.args
+AttributeError: LogoCrawler instance has no attribute 'argsu'
+ [in server/worker.py:44]
+2013-03-12 17:01:02,383 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 17:01:02,384 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    self.params["TextBoxText"] = "%sちゃんかわいい" % self.args[1]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 2: ordinal not in range(128)
+ [in server/worker.py:44]
+2013-03-12 17:01:52,057 ERROR: Error On LogoCrawler [in server/worker.py:43]
+2013-03-12 17:01:52,058 ERROR: Traceback (most recent call last):
+  File "server/worker.py", line 41, in callback
+    c.run(*message[2:]);
+  File "/Users/yuta/crawler_farm/server/crawlers/BaseCrawler.py", line 18, in run
+    self.pre_crawling();
+  File "/Users/yuta/crawler_farm/server/crawlers/LogoCrawler.py", line 37, in pre_crawling
+    self.params["TextBoxText"] = "%sちゃんかわいい".encode("utf-8") % self.args[1].encode("utf-8")
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe3 in position 2: ordinal not in range(128)
+ [in server/worker.py:44]

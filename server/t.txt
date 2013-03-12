@@ -1,0 +1,12 @@
+.
+├── crawlers
+│   ├── BaseCrawler.py
+│   ├── BaseCrawler.pyc
+│   ├── SampleCrawler.py
+│   ├── SampleCrawler.pyc
+│   ├── __init__.py
+│   └── __init__.pyc
+├── t.txt
+└── worker.py
+
+1 directory, 8 files

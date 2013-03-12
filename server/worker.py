@@ -3,6 +3,23 @@
 import pika
 import json
 from traceback import format_exc
+import logging
+import os
+from logging.handlers import *
+
+formatter = logging.Formatter(
+    '%(asctime)s %(levelname)s: %(message)s '
+    '[in %(pathname)s:%(lineno)d]'
+)
+
+logger = logging.getLogger("crawlerd");
+error_log = "logs/error.log";
+error_file_handler = RotatingFileHandler(
+    error_log, maxBytes=100000, backupCount=10
+)    
+error_file_handler.setLevel(logging.ERROR)
+error_file_handler.setFormatter(formatter)
+logger.addHandler(error_file_handler);
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
@@ -17,14 +34,14 @@ def callback(ch, method, properties, body):
     try:
         crawler = __import__("crawlers." + crawler_name);
     except:
-        print "Can't imported crawler";
+        logger.error( "Can't imported crawler");
         return;
     c = crawler.__getattribute__(crawler_name).__getattribute__(crawler_name)(url);
     try:
-        c.run();
+        c.run(*message[2:]);
     except:
-        print "Error On Crawler";
-        print format_exc()
+        logger.error("Error On %s" % message[0]);
+        logger.error(format_exc());
         return
 
 channel.basic_consume(callback,
